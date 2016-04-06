@@ -1,0 +1,779 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300&subset=latin,latin-ext);
+/* line 3, ../sass/style.scss */
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 7, ../sass/style.scss */
+header {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+}
+
+/* line 16, ../sass/style.scss */
+.logo img {
+  width: 270px;
+  margin-top: 5px;
+}
+
+/* line 24, ../sass/style.scss */
+nav ul {
+  float: right;
+  margin-top: 25px;
+  color: #649f4d;
+  background: #FFF;
+  padding-left: 0;
+  padding: 11px 0px 11px 20px;
+  border-radius: 6px;
+}
+/* line 35, ../sass/style.scss */
+nav li {
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+}
+/* line 42, ../sass/style.scss */
+nav li:after {
+  content: "|";
+  padding-left: 16px;
+  color: #ccc;
+}
+/* line 48, ../sass/style.scss */
+nav li:last-child:after {
+  content: "";
+}
+
+/* line 53, ../sass/style.scss */
+section#main-img {
+  background: url(../img/bg-front1.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 64, ../sass/style.scss */
+section#main-img h1 {
+  font-size: 35px;
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 100px;
+  font-weight: 700;
+  text-shadow: 3px 3px 9px #000;
+  text-transform: uppercase;
+}
+/* line 77, ../sass/style.scss */
+section#main-img button {
+  background: #649f4d;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 10px;
+  color: #FFF;
+}
+
+/* line 86, ../sass/style.scss */
+.filter {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 14px;
+}
+/* line 94, ../sass/style.scss */
+.filter .form-control {
+  margin-right: 10px;
+  color: #7A7A7A;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* line 102, ../sass/style.scss */
+.filter button {
+  background: #649f4d;
+  border-radius: 3px;
+  border: none;
+  color: #FFF;
+  padding: 7px 15px;
+}
+
+/* line 111, ../sass/style.scss */
+.izaberi {
+  display: none;
+}
+
+/* line 115, ../sass/style.scss */
+section#how-works {
+  margin-top: 75px;
+}
+/* line 117, ../sass/style.scss */
+section#how-works h1 {
+  color: #323a3b;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+}
+/* line 124, ../sass/style.scss */
+section#how-works .kako-radi {
+  text-align: center;
+}
+/* line 126, ../sass/style.scss */
+section#how-works .kako-radi img {
+  width: 100px;
+  text-align: center;
+  margin-top: 40px;
+}
+/* line 132, ../sass/style.scss */
+section#how-works .kako-radi h2 {
+  color: #649f4d;
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+/* line 141, ../sass/style.scss */
+section#how-works .kako-radi:before {
+  content: "";
+  background: url(../img/right39.svg) no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  background-size: 30px;
+  top: 70px;
+}
+/* line 152, ../sass/style.scss */
+section#how-works .last:before {
+  content: "";
+  background: none;
+}
+
+/* line 159, ../sass/style.scss */
+section#reviews {
+  background: #f5f6f6;
+  width: 100%;
+  height: 230px;
+  padding: 19px 0px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 167, ../sass/style.scss */
+section#reviews .carousel-inner {
+  height: 200px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+/* line 174, ../sass/style.scss */
+section#reviews .carousel-indicators {
+  bottom: 0px;
+}
+/* line 177, ../sass/style.scss */
+section#reviews .carousel-indicators li {
+  border: 1px solid rgba(68, 68, 68, 0.8);
+}
+/* line 180, ../sass/style.scss */
+section#reviews .carousel-indicators .active {
+  background-color: rgba(68, 68, 68, 0.8);
+}
+/* line 184, ../sass/style.scss */
+section#reviews .citat {
+  padding-top: 50px;
+}
+/* line 187, ../sass/style.scss */
+section#reviews .citat p {
+  font-size: 25px;
+  font-style: bold;
+  color: #474344;
+}
+/* line 194, ../sass/style.scss */
+section#reviews .autor {
+  padding-bottom: 50px;
+  font-size: 20px;
+  font-style: italic;
+  color: #686667;
+}
+/* line 200, ../sass/style.scss */
+section#reviews img {
+  float: right;
+  overflow: hidden;
+  max-height: 200px;
+  padding: 20px 100px;
+}
+
+/* line 207, ../sass/style.scss */
+section#register-img {
+  background: url(../img/traktor.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+/* line 217, ../sass/style.scss */
+section#register-img h1 {
+  color: #FFF;
+  font-size: 45px;
+  text-shadow: 3px 3px 9px #000;
+  font-weight: 700;
+  padding: 100px 25px 25px 25px;
+}
+/* line 224, ../sass/style.scss */
+section#register-img button {
+  background: #649F4D none repeat scroll 0% 0%;
+  border-radius: 3px;
+  border: medium none;
+  padding: 8px 40px;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0px 25px;
+}
+
+/* line 237, ../sass/style.scss */
+section#farmer {
+  background: #649f4d;
+  width: 100%;
+  min-height: 387px;
+  position: relative;
+  margin-top: 170px;
+}
+/* line 244, ../sass/style.scss */
+section#farmer .last {
+  border-left: 1px solid #FFF;
+  padding-left: 35px !important;
+}
+/* line 248, ../sass/style.scss */
+section#farmer .farmer-img {
+  position: absolute;
+  top: -85px;
+}
+/* line 251, ../sass/style.scss */
+section#farmer .farmer-img img {
+  max-width: 100%;
+  width: 305px;
+}
+/* line 257, ../sass/style.scss */
+section#farmer .text {
+  padding-left: 25px;
+  margin-top: 70px;
+}
+/* line 260, ../sass/style.scss */
+section#farmer .text h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #FFF;
+}
+/* line 265, ../sass/style.scss */
+section#farmer .text ul {
+  padding-left: 0;
+  padding-top: 5px;
+}
+/* line 270, ../sass/style.scss */
+section#farmer .text li {
+  color: #FFF;
+  font-size: 22px;
+  list-style: none;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+/* line 278, ../sass/style.scss */
+section#farmer .text li:before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  padding-right: 10px;
+}
+
+/* line 286, ../sass/style.scss */
+section#support {
+  text-align: center;
+}
+/* line 287, ../sass/style.scss */
+section#support h1 {
+  color: #323a3b;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+/* line 296, ../sass/style.scss */
+section#support img {
+  text-align: center;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* line 303, ../sass/style.scss */
+footer {
+  width: 100%;
+  background: #323a44;
+  position: relative;
+  padding: 20px 0;
+  margin-top: 25px;
+}
+/* line 310, ../sass/style.scss */
+footer .kontakt img {
+  opacity: 0.5;
+  margin-left: -22px;
+}
+/* line 314, ../sass/style.scss */
+footer .kontakt p {
+  white-space: pre;
+  color: #FFF;
+  opacity: 0.5;
+  margin: -10px 0 0;
+}
+/* line 322, ../sass/style.scss */
+footer .about-footer {
+  margin-top: 20px;
+}
+/* line 324, ../sass/style.scss */
+footer .about-footer h2 {
+  margin-top: 0;
+  color: #FFF;
+  font-size: 16px;
+}
+/* line 329, ../sass/style.scss */
+footer .about-footer ul {
+  color: #FFF;
+  opacity: 0.5;
+  padding-left: 0;
+}
+/* line 334, ../sass/style.scss */
+footer .about-footer li {
+  list-style: none;
+}
+/* line 339, ../sass/style.scss */
+footer .newsletter-footer {
+  margin-top: 20px;
+}
+/* line 341, ../sass/style.scss */
+footer .newsletter-footer h2 {
+  margin-top: 0;
+  color: #FFF;
+  font-size: 16px;
+}
+/* line 347, ../sass/style.scss */
+footer .newsletter-footer p {
+  color: #FFF;
+  opacity: 0.5;
+}
+/* line 352, ../sass/style.scss */
+footer .newsletter-footer .btn-default {
+  color: #FFF;
+  background-color: #649f4d;
+  border: none;
+}
+
+/* line 360, ../sass/style.scss */
+.copyright {
+  background: #1a2028;
+  padding: 5px 0;
+}
+/* line 363, ../sass/style.scss */
+.copyright p {
+  color: #FFF;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+/* line 370, ../sass/style.scss */
+section#login {
+  background: rgba(255, 255, 255, 0.9);
+  width: 330px;
+  min-height: 320px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -165px;
+  margin-top: -160px;
+  text-align: center;
+}
+/* line 382, ../sass/style.scss */
+section#login header {
+  background: #649F4D;
+  position: relative;
+  width: 100%;
+  height: 75px;
+}
+/* line 389, ../sass/style.scss */
+section#login header .logo img {
+  width: 220px;
+  margin-top: 8px;
+}
+/* line 397, ../sass/style.scss */
+section#login .form-horizontal {
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+/* line 402, ../sass/style.scss */
+section#login .form-group {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+/* line 407, ../sass/style.scss */
+section#login .col-sm-10 {
+  padding-left: 0px;
+}
+/* line 411, ../sass/style.scss */
+section#login .form-control {
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+}
+/* line 420, ../sass/style.scss */
+section#login .glyphicon {
+  color: #9F9F9F;
+}
+/* line 424, ../sass/style.scss */
+section#login .btn-default {
+  color: #FFF;
+  background-color: #649f4d;
+  border: none;
+  text-transform: uppercase;
+  padding: 8px 35px;
+  margin-top: 10px;
+}
+/* line 433, ../sass/style.scss */
+section#login a {
+  color: #649f4d;
+  text-decoration: none;
+}
+
+/* line 439, ../sass/style.scss */
+.background {
+  background: url(../img/bg-login.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  overflow: hidden;
+  filter: grayscale(100%) opacity(0.5);
+}
+
+/* line 451, ../sass/style.scss */
+.proizvod {
+  height: 70px;
+}
+/* line 454, ../sass/style.scss */
+.proizvod header {
+  background: #649F4D;
+}
+/* line 459, ../sass/style.scss */
+.proizvod .logo img {
+  width: 170px;
+  margin-top: 3px;
+}
+/* line 466, ../sass/style.scss */
+.proizvod nav ul {
+  float: right;
+  color: #FFF;
+  padding: 11px 0px 11px 20px;
+  margin-top: 4px;
+  background: #649F4D;
+}
+/* line 474, ../sass/style.scss */
+.proizvod nav li {
+  margin-right: 0px;
+  font-size: 15px;
+}
+/* line 479, ../sass/style.scss */
+.proizvod nav li:after {
+  content: "";
+}
+
+/* line 485, ../sass/style.scss */
+section#photo {
+  background: url(../img/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 355px;
+  color: #FFF;
+  text-shadow: 3px 3px 9px #000;
+  font-weight: 600;
+}
+/* line 496, ../sass/style.scss */
+section#photo #user {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 40px -50px;
+}
+/* line 501, ../sass/style.scss */
+section#photo #user h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+/* line 506, ../sass/style.scss */
+section#photo #user img {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid;
+}
+/* line 513, ../sass/style.scss */
+section#photo #proizvodjac {
+  position: absolute;
+  left: 100%;
+  width: 200px;
+  margin-left: -235px;
+  text-align: right;
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
+/* line 523, ../sass/style.scss */
+section#photo #ukupna-ocjena {
+  position: absolute;
+  width: 200px;
+  left: 100%;
+  top: 100%;
+  margin-left: -235px;
+  margin-top: -40px;
+  text-align: right;
+}
+/* line 532, ../sass/style.scss */
+section#photo #ukupna-ocjena h4 {
+  display: inline-block;
+}
+/* line 537, ../sass/style.scss */
+section#photo .galerija {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  display: none;
+}
+/* line 545, ../sass/style.scss */
+section#photo .galerija .ikona {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 550, ../sass/style.scss */
+section#photo .galerija .ikona .fa.fa-camera {
+  font-size: 50px;
+}
+
+/* line 557, ../sass/style.scss */
+section#photo:hover .galerija {
+  display: block;
+}
+
+/* line 561, ../sass/style.scss */
+section#info {
+  max-height: 355px;
+}
+/* line 564, ../sass/style.scss */
+section#info .box {
+  width: 100%;
+  min-height: 76px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+/* line 572, ../sass/style.scss */
+section#info .box h3 {
+  background: #E4CE54;
+  font-size: 18px;
+  color: white;
+  padding: 8px;
+  margin: 0px 15px 0px -15px;
+  font-weight: 600;
+}
+/* line 582, ../sass/style.scss */
+section#info .box h2 {
+  background: #F0EEEF;
+  color: #7A7A7A;
+  font-size: 22px;
+  padding: 8px;
+  margin: 0px 15px 0px -15px;
+  font-weight: 600;
+}
+/* line 591, ../sass/style.scss */
+section#info .box .form-group {
+  margin: 0px;
+}
+/* line 595, ../sass/style.scss */
+section#info .box .form-control {
+  text-align: center;
+  height: 30px;
+}
+
+/* line 602, ../sass/style.scss */
+section#opis {
+  margin: 50px 0px 15px 0px;
+  color: #6A6A6A;
+}
+/* line 606, ../sass/style.scss */
+section#opis h1 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+/* line 614, ../sass/style.scss */
+section#ocjena {
+  color: #6A6A6A;
+  margin-bottom: 20px;
+}
+/* line 618, ../sass/style.scss */
+section#ocjena h2 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+}
+/* line 625, ../sass/style.scss */
+section#ocjena h5 {
+  padding: 8px 15px;
+  margin: 10px 0px 0px 0px;
+  font-size: 15px;
+  display: inline-block;
+}
+/* line 632, ../sass/style.scss */
+section#ocjena .ocjena-forma {
+  background: #F4F4F4;
+  width: 100%;
+  min-height: 245px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+/* line 640, ../sass/style.scss */
+section#ocjena .form-group {
+  margin: 12px 10px;
+}
+/* line 643, ../sass/style.scss */
+section#ocjena .form-group textarea {
+  width: 100%;
+  resize: none;
+}
+/* line 649, ../sass/style.scss */
+section#ocjena .btn-default {
+  color: #FFF;
+  background-color: #649f4d;
+  border: none;
+  float: right;
+  text-transform: uppercase;
+  padding: 8px 35px;
+  margin-top: 10px;
+}
+
+/* line 660, ../sass/style.scss */
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 17px;
+  display: inline-block;
+}
+
+/* line 666, ../sass/style.scss */
+.rating span.star {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+}
+
+/* line 672, ../sass/style.scss */
+.rating span.star:hover {
+  cursor: pointer;
+}
+
+/* line 675, ../sass/style.scss */
+.rating span.star:before {
+  content: "\f006";
+  padding-right: 5px;
+  color: #999999;
+}
+
+/* line 680, ../sass/style.scss */
+.rating span.star:hover:before, .rating span.star:hover ~ span.star:before {
+  content: "\f005";
+  color: #FFB402;
+}
+
+/* line 685, ../sass/style.scss */
+.fa.fa-star {
+  padding-right: 3px;
+  font-size: 16px;
+  color: #FFB402;
+}
+
+/* line 691, ../sass/style.scss */
+.fa.fa-star-o {
+  padding-right: 3px;
+  font-size: 16px;
+  color: #FFB402;
+}
+
+/* line 697, ../sass/style.scss */
+.recenzija {
+  min-height: 185px;
+  margin: 30px 15px;
+  border-bottom: #F4F4F4 1px solid;
+  text-align: center;
+  color: #6A6A6A;
+}
+/* line 704, ../sass/style.scss */
+.recenzija img {
+  width: 65%;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+/* line 710, ../sass/style.scss */
+.recenzija .bubble {
+  width: 100%;
+  min-height: 145px;
+  padding: 0px;
+  background: #F4F4F4;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-align: left;
+}
+/* line 721, ../sass/style.scss */
+.recenzija .bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 18px 15px 0;
+  border-color: transparent #F4F4F4;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: 0px;
+  top: 15px;
+}
+/* line 734, ../sass/style.scss */
+.recenzija h5 {
+  padding: 8px 15px;
+  margin: 10px 0px 0px;
+  font-size: 15px;
+  display: inline-block;
+}
+/* line 741, ../sass/style.scss */
+.recenzija small {
+  display: block;
+  margin: 5px 20px 30px 20px;
+}
